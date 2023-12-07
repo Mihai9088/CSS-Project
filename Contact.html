@@ -15,8 +15,8 @@
                 <p>Have questions or want to get in touch? Use the form below or visit us at our
                     location!</p>
 
-                <div class="contact-form">
-                    <form action="#" method="post">
+                <div class="contact-form" id="error">
+                    <form action="#"  novalidate="novalidate" id="form">
                         <label for="firstName">First Name:</label>
                         <input
                             type="text"
@@ -24,6 +24,7 @@
                             name="firstName"
                             placeholder="Your first name"
                             required="required">
+                        <span class="error-message" id="firstNameError"></span>
 
                         <label for="lastName">Last Name:</label>
                         <input
@@ -32,6 +33,7 @@
                             name="lastName"
                             placeholder="Your last name"
                             required="required">
+                        <span class="error-message" id="lastNameError"></span>
 
                         <label for="email">Email Address:</label>
                         <input
@@ -40,6 +42,7 @@
                             name="email"
                             placeholder="Your email address"
                             required="required">
+                        <span class="error-message" id="emailError"></span>
 
                         <label for="subject">Subject:</label>
                         <input
@@ -48,6 +51,7 @@
                             name="subject"
                             placeholder="Subject of your message"
                             required="required">
+                        <span class="error-message" id="subjectError"></span>
 
                         <label for="message">Message:</label>
                         <textarea
@@ -56,6 +60,7 @@
                             rows="4"
                             placeholder="Your message"
                             required="required"></textarea>
+                        <span class="error-message" id="messageError"></span>
 
                         <button type="submit">Submit</button>
                     </form>

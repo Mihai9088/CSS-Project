@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="features.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="slider.css"></link>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -20,12 +22,18 @@
         <div class="navbar">
             <div class="logo">Brew<span>HUB</span></div>
             <div class="container">
+                <div class="menu-icon"id="menu" onclick="toggleMenu()">
+                    <div class="bar line-1 "></div>
+                    <div class="bar  line-2"></div>
+                    <div class="bar  line-3"></div>
+                </div>
                 <nav>
-                    <ul>
+                    <ul class="ul">
                         <li><a href="About.html">About us</a></li>
                         <li><a href="Contact.html">Contact</a></li>
                     </ul>
                 </nav>
+                
             </div>
         </div>
     </header>
@@ -68,6 +76,20 @@
         </div>
     </section>
 
+
+
+    <section aria-label="newest-photos" class="slider">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+          <ul data-slides>
+            
+          </ul>
+        </div>
+      </section>
+
+
+
     <footer class="footer" id="details">
 <img src="images/footer.png" alt="coffee footer photo">
         <div class="title-text-footer">
@@ -107,7 +129,11 @@
 
     </footer>
 </body>
+
+
 </html>
+
+
 
 
 

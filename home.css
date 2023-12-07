@@ -143,6 +143,9 @@ cursor: pointer;
 color:#ba9d7a ;
 }
 
+.menu-icon {
+    display: none;
+}
 
 
 @media screen and (max-width: 770px) {
@@ -151,15 +154,97 @@ color:#ba9d7a ;
     }
 
     .home-btns a {
-        width: 50%;
+        width: 120px;
         font-size: 14px;
     }
 
-    .home-btns{
+    .ul li a{
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
         justify-content: center;
         align-items: center;
     }
+
+
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        width: 30px;
+       position: relative;
+       margin-bottom: 5px;
+
+    }
+
+    .menu-icon .bar {
+        width: 20px;
+        height: 2px;
+        background-color: #a67327;
+        margin: 6px 0;
+        transition: transform 0.3s ease-in-out;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+     .menu-icon .bar:nth-child(1) {
+        transform: translate(-50%, -50%);
+    }
+    
+    .menu-icon .bar:nth-child(2) {
+        transform: translate(-50%, -7px);
+    }
+
+    .menu-icon .bar:nth-child(3) {
+        transform: translate(-50%, -13px);
+    }
+    
+    .menu-icon.open .line-1 {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    
+    .menu-icon.open .line-2 {
+        width: 0;
+    }
+    
+    .menu-icon.open .line-3 {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    
+.open .line-1{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.open .line-3{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.open .line-2{
+   width: 0;
+}
+
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        height: 100vh;
+        background-color: rgba(24, 23, 23, .9);
+        padding-top: 50%;
+       
+    }
+
+    nav ul.show {
+        display: flex;
+    
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+   
 }
