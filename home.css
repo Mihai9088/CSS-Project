@@ -180,7 +180,7 @@ color:#ba9d7a ;
     .menu-icon .bar {
         width: 20px;
         height: 2px;
-        background-color: #a67327;
+        background-color: #dcb59c;
         margin: 6px 0;
         transition: transform 0.3s ease-in-out;
         display: block;
@@ -240,7 +240,7 @@ color:#ba9d7a ;
 
     nav ul.show {
         display: flex;
-    
+        transition: .2s;
     }
 
     nav ul li {
