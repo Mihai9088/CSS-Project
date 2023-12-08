@@ -69,8 +69,8 @@ function validateForm() {
     return false;
   }
 
-  const lastNnameValue = lastName.value.trim();
-  if (lastNnameValue === "") {
+  const lastNameValue = lastName.value.trim();
+  if (lastNameValue === "") {
     displayError("Enter your last name", "lastNameError");
     return false;
   }
