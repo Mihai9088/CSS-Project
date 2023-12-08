@@ -45,7 +45,7 @@ fetch("https://api.sampleapis.com/coffee/hot")
   .catch((error) => console.error("Error:", error));
 
 const name = document.getElementById("firstName");
-const lastNname = document.getElementById("lastName");
+const lastName = document.getElementById("lastName");
 const email = document.getElementById("email");
 const subject = document.getElementById("subject");
 const message = document.getElementById("message");
@@ -69,30 +69,30 @@ function validateForm() {
     return false;
   }
 
-  const lastName = lastName.value.trim();
-  if (lastName === "") {
-    displayError("Enter your last name");
+  const lastNnameValue = lastName.value.trim();
+  if (lastNnameValue === "") {
+    displayError("Enter your last name", "lastNameError");
     return false;
   }
 
   const emailAddress = email.value.trim();
   if (emailAddress === "") {
-    displayError("Enter your email address");
+    displayError("Enter your email address", "emailError");
     return false;
   } else if (!isValidEmail(emailAddress)) {
-    displayError("Enter a valid email address");
+    displayError("Enter a valid email address", "emailError");
     return false;
   }
 
   const messageSubject = subject.value.trim();
   if (messageSubject === "") {
-    displayError("Enter the subject ");
+    displayError("Enter the subject", "subjectError");
     return false;
   }
 
   const messageContent = message.value.trim();
   if (messageContent === "") {
-    displayError("Enter your message");
+    displayError("Enter your message", "messageError");
     return false;
   }
 
