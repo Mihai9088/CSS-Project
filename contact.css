@@ -66,6 +66,10 @@ button:hover {
     color: red;
 }
 
+.error-message{
+    color: red;
+}
+
 
 
 @media screen and (max-width: 770px) {
